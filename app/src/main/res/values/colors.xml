@@ -5,6 +5,9 @@
     <color name="colorAccent">#b0ff57</color>
     <color name="darker_gray">#373737</color>
 
-    <color name="color_launch">#76ff03</color>
+    <color name="color_launch">#76ff03</color>#212121
+
+    <color name="background">#212121</color>
+    <color name="white">#ffffff</color>
 
 </resources>

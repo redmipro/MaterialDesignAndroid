@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class UserActivity extends AppCompatActivity {
 
-    TextView emailTextView;
+    TextView emailTextView1;
     MaterialButton logoutButton;
 
     @Override
@@ -21,12 +21,12 @@ public class UserActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
 
-        emailTextView = findViewById(R.id.emailEditText);
+        emailTextView1 = findViewById(R.id.emailTextViewac);
         logoutButton = findViewById(R.id.logoutButton);
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user !=null){
-            emailTextView.setText(user.getEmail());
+            emailTextView1.setText(user.getEmail());
         }
 
         logoutButton.setOnClickListener(new View.OnClickListener() {

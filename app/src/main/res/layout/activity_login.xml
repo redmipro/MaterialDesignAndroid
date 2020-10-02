@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:padding="25dp"
     android:orientation="vertical"
+    android:background="@color/background"
     tools:context=".LoginActivity">
 
     <ImageView
@@ -17,6 +18,7 @@
         android:layout_gravity="center"/>
 
     <TextView
+        android:textColor="@color/white"
         android:id="@+id/bienvenidoLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,6 +30,7 @@
         android:transitionName="textTrans"/>
 
     <TextView
+        android:textColor="@color/white"
         android:id="@+id/continuarLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,6 +51,7 @@
         android:layout_marginBottom="12dp"
         android:id="@+id/usuarioTextField"
             android:transitionName="emailInputTextTrans"
+            android:textColorHint="@color/white"
         android:hint="Email"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
@@ -64,6 +68,7 @@
             android:id="@+id/contrasenaTextField"
             android:hint="Contraseña"
             android:transitionName="passwordInputTextTrans"
+            android:textColorHint="@color/white"
             app:passwordToggleEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
@@ -80,7 +85,7 @@
             android:layout_height="wrap_content"
             android:textAlignment="textEnd"
             android:textSize="20dp"
-            android:textColor="@color/darker_gray"
+            android:textColor="@color/white"
             android:fontFamily="@font/abel"
             android:layout_gravity="end"
             android:clickable="true"
@@ -92,9 +97,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="INICIO"
+            android:textColor="@color/background"
             android:layout_marginTop="12dp"
-            android:layout_marginBottom="70dp"
+
             android:transitionName="buttonSignInTrans"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/loginGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="50dp"/>
+
+
 
         <TextView
             android:id="@+id/nuevoUsuario"
@@ -102,7 +118,7 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="20dp"
-            android:textColor="@color/darker_gray"
+            android:textColor="@color/white"
             android:fontFamily="@font/abel"
             android:layout_gravity="center"
             android:clickable="true"

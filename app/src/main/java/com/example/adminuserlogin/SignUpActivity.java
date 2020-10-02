@@ -47,6 +47,7 @@ public class SignUpActivity extends AppCompatActivity {
         contrasenaTextField = findViewById(R.id.contrasenaTextField);
         inicioSesion = findViewById(R.id.inicioSesion);
         nuevoUsuario = findViewById(R.id.nuevoUsuario);
+
         emailEditText = findViewById(R.id.emailEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
         confirmPasswordEditText =  findViewById(R.id.confirmPasswordEditText);
@@ -80,7 +81,7 @@ public class SignUpActivity extends AppCompatActivity {
         }else{
             emailEditText.setError(null);
         }
-        if (password.isEmpty() || password.length() <8 ){
+        if (password.isEmpty() || password.length() < 8 ){
             passwordEditText.setError("Se necesitan mas de 8 caracteres");
             return;
         }else if (!Pattern.compile("[0-9]").matcher(password).find()){

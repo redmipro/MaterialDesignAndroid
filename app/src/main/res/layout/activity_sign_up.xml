@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:padding="25dp"
     android:orientation="vertical"
+    android:background="@color/background"
     tools:context=".SignUpActivity">
 
     <ImageView
@@ -17,6 +18,7 @@
         android:layout_gravity="left"/>
 
     <TextView
+        android:textColor="@color/white"
         android:id="@+id/bienvenidoLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,6 +30,7 @@
         android:transitionName="textTrans"/>
 
     <TextView
+        android:textColor="@color/white"
         android:id="@+id/continuarLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,6 +50,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/nameTextField"
             android:hint="Nombre Completo"
+            android:textColorHint="@color/white"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -59,6 +63,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/usuarioSignUpTextField"
             android:hint="Email"
+            android:textColorHint="@color/white"
             android:transitionName="emailInputTextTrans"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
@@ -73,6 +78,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/contrasenaTextField"
             android:hint="Contraseña"
+            android:textColorHint="@color/white"
             android:transitionName="passwordInputTextTrans"
             app:passwordToggleEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -89,6 +95,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/confirmarContrasenaTextField"
             android:hint="Confirmar contraseña"
+            android:textColorHint="@color/white"
             app:passwordToggleEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
@@ -106,6 +113,7 @@
             android:text="REGISTRAR"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
+            android:textColor="@color/background"
             android:transitionName="buttonSignInTrans"/>
 
         <TextView
@@ -114,7 +122,7 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="20dp"
-            android:textColor="@color/darker_gray"
+            android:textColor="@color/white"
             android:fontFamily="@font/abel"
             android:layout_gravity="center"
             android:clickable="true"
